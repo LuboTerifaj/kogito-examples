@@ -29,6 +29,18 @@
       "transition": "VerifyNewApplicant"
     },
     {
+      "name": "HandleNewApplicantX",
+      "type": "event",
+      "onEvents": [
+        {
+          "eventRefs": ["NewApplicantEvent"],
+          "actions": []
+        }
+      ],
+      "transition": "HandleDenied"
+    },
+    
+    {
       "name": "VerifyNewApplicant",
       "type": "switch",
       "dataConditions": [
